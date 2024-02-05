@@ -1,22 +1,22 @@
 import { describe, expect, test } from 'vitest'
 
-import { Selector } from "../src"
+import { Editor } from "../src"
 
 
-describe('selector', () => {
+describe('editor', () => {
 
     test('is Group', () => {
 
-        const selector = new Selector()
-        expect(selector.children).toBeTruthy()
+        const editor = new Editor()
+        expect(editor.children).toBeTruthy()
 
     })
 
     test('async: is Group', async () => {
         await new Promise(function (resolve) {
 
-            const selector = new Selector()
-            expect(selector.children).toBeTruthy()
+            const editor = new Editor()
+            expect(editor.children).toBeTruthy()
             resolve(true)
         })
 
